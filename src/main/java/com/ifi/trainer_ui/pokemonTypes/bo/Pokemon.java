@@ -6,6 +6,8 @@ public class Pokemon {
 
     private int level;
 
+    PokemonType pt ;
+
     public Pokemon() {
     }
 
@@ -29,5 +31,13 @@ public class Pokemon {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public PokemonType getPt() {
+        return pt;
+    }
+
+    public void setPt(PokemonType pt) {
+        this.pt = pt;
     }
 }

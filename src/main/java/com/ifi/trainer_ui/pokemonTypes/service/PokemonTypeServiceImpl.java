@@ -33,7 +33,7 @@ public class PokemonTypeServiceImpl implements PokemonTypeService {
         return  list;
     }
 
-    public PokemonType getPokemonsType(int id) {
+    public PokemonType getPokemonType(int id) {
         PokemonType pokemon = template.getForObject(url+"/pokemon-types/", PokemonType.class,id);
         return  pokemon;
     }
